@@ -3,19 +3,15 @@ using UnityEngine.SceneManagement;
 
 public class clotheSelection : MonoBehaviour
 {
-    public void OnDetectiveClick(){
-        GameData.undercover = false;
-        SceneManager.LoadScene("BarScene");
-    }
-
-    public void OnUndercoverClick(){
-        GameData.undercover = true;
-        SceneManager.LoadScene("BarScene");
-    }
-
-    public static class GameData
+    public void OnDetectiveClick()
     {
-        public static bool undercover = false;
+        GameData.SetFlag("undercover", false);
+        SceneManager.LoadScene("BarScene");
     }
 
+    public void OnUndercoverClick()
+    {
+        GameData.SetFlag("undercover", true);
+        SceneManager.LoadScene("BarScene");
+    }
 }

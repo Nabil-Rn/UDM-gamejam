@@ -1,0 +1,27 @@
+[
+    {
+      "speaker": "Detective",
+      "text": "Where were you last night?",
+      "portrait": "DetectiveNeutral",
+      "requires": []
+    },
+    {
+      "speaker": "Sailor",
+      "text": "None of your business.",
+      "portrait": "SailorAngry",
+      "requires": []
+    },
+    {
+        "speaker": "Detective - undercover",
+        "text": "hey i was talkng to the bartender and he saw you last night, so were you ?",
+        "portrait": "DetectiveNeutral",
+        "requires": []
+    },
+    {
+      "speaker": "Sailor",
+      "text": "Okay, okay... I walked past the bar.",
+      "portrait": "SailorWorried",
+      "requires": ["heard_sailor_rumor"]
+    }
+  ]
+  
