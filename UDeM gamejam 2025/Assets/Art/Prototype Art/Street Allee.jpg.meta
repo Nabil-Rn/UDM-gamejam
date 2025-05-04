@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Street Allee_0: 6252795358225020305
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

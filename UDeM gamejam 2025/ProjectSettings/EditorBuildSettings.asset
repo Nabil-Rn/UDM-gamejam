@@ -15,6 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Scenes/StartingSceneChoices.unity
     guid: 2868b716da7c2e0409d6cba08ea049bf
   - enabled: 1
+    path: Assets/Scenes/Scenes/Scene2(bartender).unity
+    guid: debd204b3e597d74c818da05d8523c56
+  - enabled: 1
+    path: Assets/Scenes/Scenes/Scene3(Sailor).unity
+    guid: 475f2d9666b572840a5158550873de4e
+  - enabled: 1
     path: Assets/Scenes/PrototypeSwitchScene1.unity
     guid: 36ecde5968eb0e44bad3a3ab8fa16a67
   - enabled: 1

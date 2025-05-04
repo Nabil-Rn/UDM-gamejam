@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class ScriptBartander : MonoBehaviour
+public class ScriptFisherMan : MonoBehaviour
 {
     public Dialogue dialogue;
     public GameObject fadeScreenIn;
@@ -72,7 +72,7 @@ public class ScriptBartander : MonoBehaviour
         //Transition
         fadeScreenOut.SetActive(true);
         yield return new WaitForSeconds(0);
-        SceneManager.LoadScene("Scene3(Sailor)");
+        SceneManager.LoadScene("CatMiniGame");
         
 
 
