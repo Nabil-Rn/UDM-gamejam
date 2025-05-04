@@ -56,7 +56,7 @@ public class script : MonoBehaviour
         //Transition
         fadeScreenOut.SetActive(true);
         yield return new WaitForSeconds(0);
-        SceneManager.LoadScene("StartingSceneChoices");
+        SceneManager.LoadScene("Scene2(bartender)");
         
 
 
