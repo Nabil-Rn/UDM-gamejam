@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1bc42b86fa88a2a418efe114a9e0d5ce
+guid: 5653aaf6dace1d84fa216d5787a7cde5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1075993247170539406
-    second: cat_0
+      213: 6342832464880067121
+    second: EmotionCheck_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cat_0
+      name: EmotionCheck_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
-        width: 671
-        height: 811
+        y: 698
+        width: 350
+        height: 350
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e8fa15e4822beee00800000000000000
-      internalID: 1075993247170539406
+      spriteID: 3086014373b0bc44f886b99d08416cb2
+      internalID: -2140874925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionCheck_1
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 698
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47461c9ef4bd21c47b58c8071b6e8822
+      internalID: -1055392503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionCheck_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 348
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 251207c4ba9db8341b3de52f77ffff84
+      internalID: 510917371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionCheck_3
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 348
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08f046d0d802e9d4ea7e518f323a844e
+      internalID: 678257784
       vertices: []
       indices: 
       edges: []
@@ -125,7 +191,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6d0180fbd59f7fd4484d2eebfff1cf4c
     internalID: 0
     vertices: []
     indices: 
@@ -133,9 +199,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":350.0,"y":350.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      cat_0: 1075993247170539406
+      EmotionCheck_0: -2140874925
+      EmotionCheck_1: -1055392503
+      EmotionCheck_2: 510917371
+      EmotionCheck_3: 678257784
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

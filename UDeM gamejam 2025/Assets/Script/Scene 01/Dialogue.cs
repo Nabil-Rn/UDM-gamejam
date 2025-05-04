@@ -9,6 +9,7 @@ public class Dialogue : MonoBehaviour
     public string[] lines;
     public string[] names;
     public float textSpeed;
+    public bool isFinished = false; // Added to track if dialogue is finished
      // Assuming you have a script class that handles the fade screen
 
     public int index;
@@ -68,6 +69,7 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
+            isFinished = true; // Set to true when dialogue is finished
             gameObject.SetActive(false);
             // End of dialogue
         }

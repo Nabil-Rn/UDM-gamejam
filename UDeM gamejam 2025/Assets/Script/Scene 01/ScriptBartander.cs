@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class script : MonoBehaviour
+public class ScriptBartander : MonoBehaviour
 {
     public Dialogue dialogue;
     public GameObject fadeScreenIn;
@@ -44,12 +44,12 @@ public class script : MonoBehaviour
         fadeScreenIn.SetActive(false);
         //FirstImage.SetActive(true);
         //Wait 2 seconds, Dialogue
+        FirstImage.SetActive(true);
         ScreenDim.SetActive(true);
         yield return new WaitForSeconds(1);
         TextBox.SetActive(true);
         Debug.Log("Coroutine Works");
         yield return new WaitForSeconds(2);
-        SecondImage.SetActive(true);
         //Wait till dialogus is finished
         yield return new WaitUntil(() => dialogue.isFinished);
         Debug.Log("dialogue finished");

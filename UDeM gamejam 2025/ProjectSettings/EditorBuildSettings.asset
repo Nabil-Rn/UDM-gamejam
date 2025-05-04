@@ -9,8 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/MainProtoypeScene.unity
     guid: 397436060c73b304b99642e6da811f00
   - enabled: 1
+    path: Assets/Scenes/Scenes/StartingScene.unity
+    guid: 223449ce5f9635041a182ad2b4a8568a
+  - enabled: 1
+    path: Assets/Scenes/Scenes/StartingSceneChoices.unity
+    guid: 2868b716da7c2e0409d6cba08ea049bf
+  - enabled: 1
     path: Assets/Scenes/PrototypeSwitchScene1.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    guid: 36ecde5968eb0e44bad3a3ab8fa16a67
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 3990aae86a444234fa0240fdbd07412b
