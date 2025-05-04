@@ -12,7 +12,6 @@ public class scriptChoiceScene1 : MonoBehaviour
     public GameObject SecondImage;
     public GameObject TextBox;
     public GameObject ScreenDim;	
-    public GameObject fadeScreenOut;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,7 +22,6 @@ public class scriptChoiceScene1 : MonoBehaviour
         FirstImage.SetActive(false);
         fadeScreenIn.SetActive(true);
         ScreenDim.SetActive(false);
-        fadeScreenOut.SetActive(false);
         
     }
 

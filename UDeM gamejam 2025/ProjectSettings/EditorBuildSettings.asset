@@ -44,6 +44,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 6468ca3a8fcbae74c986cbae3dd9f4db
+  - enabled: 1
+    path: Assets/Scenes/maze.unity
+    guid: 96a0cc01e820f5144b768a6a00716161
+  - enabled: 1
+    path: Assets/Scenes/EvidenceScene.unity
+    guid: c43af518ad5ab0f4689846af93c7a0bb
+  - enabled: 1
+    path: Assets/Scenes/WinScene.unity
+    guid: 784e9667ef8240843939c0ff151d477c
+  - enabled: 1
+    path: Assets/Scenes/Scenes/VerdictScene.unity
+    guid: b49a056e8ce796e42bcd169d784c8599
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

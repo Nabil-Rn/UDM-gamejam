@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -154,10 +155,6 @@ public class PlayerController : MonoBehaviour
     void TriggerWin()
     {
         Debug.Log("You Win!");
-        // You can load a new scene or show a UI here
-        // For example: 
-        // SceneManager.LoadScene("WinScene");
-        // Or display a UI: 
-        // winUI.SetActive(true);  // If you have a UI to show
+        SceneManager.LoadScene("EvidenceScene");  // Load the evidence scene
     }
 }
