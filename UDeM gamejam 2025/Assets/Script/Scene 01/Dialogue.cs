@@ -5,10 +5,13 @@ using TMPro;
 public class Dialogue : MonoBehaviour
 {
     public TextMeshProUGUI dialogueText;
+    public TextMeshProUGUI charName;
     public string[] lines;
+    public string[] names;
     public float textSpeed;
+     // Assuming you have a script class that handles the fade screen
 
-    private int index;
+    public int index;
 
     void Start()
     {
@@ -31,25 +34,29 @@ public class Dialogue : MonoBehaviour
                 StopAllCoroutines();
                 dialogueText.text = lines[index];
             }
-
         }
+
     }
 
     void StartDialogue()
     {
         index = 0;
         StartCoroutine(TypeLine());
+        
     }
 
     IEnumerator TypeLine()
     {
+        charName.text = names[index]; // Assuming you want to set the character name here
         dialogueText.text = "";
-        foreach (char letter in lines[index].ToCharArray())
+        foreach (char letter in lines[index].ToCharArray() )
         {
             dialogueText.text += letter;
             yield return new WaitForSeconds(textSpeed);
         }
     }
+
+    //If index 3 (meaning third bit of text), this is the name of the character.
 
     // Moved _inside_ the class, spelling corrected
     void NextLine()

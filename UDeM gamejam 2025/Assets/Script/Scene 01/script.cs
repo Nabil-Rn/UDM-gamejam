@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class script : MonoBehaviour
 {
+    public Dialogue dialogue;
     public GameObject fadeScreenIn;
 
     //Replace this with the name of your image
@@ -14,7 +15,10 @@ public class script : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        StartCoroutine(EventStarter());
+        
+        TextBox.SetActive(false);
+        SecondImage.SetActive(true);
+        FirstImage.SetActive(true);
     }
 
     // Update is called once per frame
@@ -26,6 +30,7 @@ public class script : MonoBehaviour
     //Thus it waits.
     IEnumerator  EventStarter()
     {
+        //event 1 (whatever that means)
         //Wait 2 seconds, fate screen on
         yield return  new WaitForSeconds(3);
         fadeScreenIn.SetActive(false);
@@ -35,6 +40,24 @@ public class script : MonoBehaviour
         TextBox.SetActive(true);
         yield return new WaitForSeconds(2);
         SecondImage.SetActive(true);
+
+    }
+
+    IEnumerator  EventTwo()
+    {
+        //event 1 (whatever that means)
+        //Wait 2 seconds, fate screen on
+        yield return  new WaitForSeconds(3);
+        //charName.GetComponent<TMPro.TMP_Text>().text = "Name2";
+        fadeScreenIn.SetActive(false);
+        FirstImage.SetActive(true);
+        //Wait 2 seconds, Dialogue
+        yield return new WaitForSeconds(2);
+        TextBox.SetActive(true);
+        yield return new WaitForSeconds(2);
+        //Instead of waiting arbitrary shit.
+        if (dialogue.index == 3) SecondImage.SetActive(true);
+        
 
     }
 
