@@ -78,7 +78,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   m_FlipX: 0
@@ -108,6 +108,7 @@ MonoBehaviour:
   wallLayer:
     serializedVersion: 2
     m_Bits: 8
+  mazegen: {fileID: 7541804214493106834, guid: 0dd2e92d655844045bb022340e59cdc0, type: 3}
   inputActions: {fileID: -944628639613478452, guid: 19230ff5c0cb54f46a2217f8f968de0d, type: 3}
 --- !u!61 &5397038865966722523
 BoxCollider2D:

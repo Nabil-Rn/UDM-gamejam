@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -14,9 +15,9 @@ public class Mazegen : MonoBehaviour {
     public string[,] maze;
     public List<int[]> walls;
     public GameObject wallPrefab;  // Reference to the wall prefab
-    public GameObject pathPrefab;  // Reference to the path prefab
-    public GameObject playerPrefab;  // Reference to the path prefab
-    public int[] startingPoint;
+    public GameObject floorPrefab;  // Reference to the floor prefab
+    public GameObject playerPrefab;  // Reference to the player prefab
+    public MazePathManager mazePathManager;  // Reference to the MazePathManager
 
     void Start() {
         maze = new string[maze_height, maze_width];
@@ -45,8 +46,6 @@ public class Mazegen : MonoBehaviour {
         if (starting_width == maze_width - 1) {
             starting_width -= 1;
         }
-
-        startingPoint = new int[] {starting_height, starting_width};
 
         // Mark it as cell and add surrounding walls to the list.
         maze[starting_height, starting_width] = CELL;
@@ -297,7 +296,6 @@ public class Mazegen : MonoBehaviour {
                 break;
             }
         }
-
         VisualizeMaze();
     }
 
@@ -328,7 +326,7 @@ public class Mazegen : MonoBehaviour {
         // Visualize the maze with blue and white squares
         for (int i = 0; i < maze_height; i++) {
             for (int j = 0; j < maze_width; j++) {
-                GameObject prefabToInstantiate = maze[i, j] == WALL ? wallPrefab : pathPrefab;
+                GameObject prefabToInstantiate = maze[i, j] == WALL ? wallPrefab : floorPrefab;
                 Vector3 position = new(j * cellSize, -i * cellSize, 0);
                 Instantiate(prefabToInstantiate, position, Quaternion.identity, transform);
             }

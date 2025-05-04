@@ -15,14 +15,13 @@ public class PlayerController : MonoBehaviour
     private float lastInputTime = -1f;  // Time when the player last pressed a key
     public InputActionAsset inputActions;
     private InputAction moveAction;
-    private Stack<int[]> moveHistory = new();
-
+    private Stack<Vector2> moveHistory = new();
+    private bool hasWon = false;  // Flag to check if the player has won
     void Awake()
     {
-        moveHistory.Push(mazegen.startingPoint);
-
         // Get the Rigidbody2D component
         rb = GetComponent<Rigidbody2D>();
+        moveHistory.Push(rb.position);
         if (rb == null)
         {
             Debug.LogError("Rigidbody2D is missing from the player GameObject!");
@@ -64,10 +63,12 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         // Only process input if the cooldown time has passed
-        if (Time.time - lastInputTime >= inputCooldown)
+        if (Time.time - lastInputTime >= inputCooldown && !hasWon)
         {
             moveInput = moveAction.ReadValue<Vector2>();
-            HandleMovement();
+            if (moveInput != Vector2.zero) {
+                HandleMovement();
+            }
         }
     }
 
@@ -100,18 +101,22 @@ public class PlayerController : MonoBehaviour
                 // If the ray hits something, check if it's not a wall (using LayerMask)
                 if (hit.collider == null)  // No hit, or hit something not in the "wallLayer"
                 {
-                    if (moveHistory.Count > 0 && moveHistory.Peek()[0] == (int)targetPosition.x && moveHistory.Peek()[1] == (int)targetPosition.y)
+                    if (moveHistory.Peek() == rb.position + move)
                     {
-                        // GameObject prefabToInstantiate = maze[i, j] == WALL ? wallPrefab : pathPrefab;
-                        // Vector3 position = new(j * cellSize, -i * cellSize, 0);
-                        // Instantiate(prefabToInstantiate, position, Quaternion.identity, transform);
-
+                        mazegen.mazePathManager.MakeBack(rb.position);
+                        moveHistory.Pop();
+                    }
+                    else
+                    {
+                        mazegen.mazePathManager.MakePath(rb.position);
+                        moveHistory.Push(rb.position);
                     }
                     // Move the player to the target position if no collision or non-wall object is detected
                     rb.MovePosition(targetPosition);
 
                     // Update the last input time to prevent immediate re-input
                     lastInputTime = Time.time;
+                    CheckForWin((int)targetPosition[1]);
                 }
             }
         }
@@ -136,4 +141,23 @@ public class PlayerController : MonoBehaviour
         return false;  // The position is out of bounds
     }
 
+        // Check if the player has reached the win position
+    void CheckForWin(int pos)
+    {
+        if (pos == -mazegen.maze_height + 1)
+        {
+            hasWon = true;
+            TriggerWin();
+        }
+    }
+
+    void TriggerWin()
+    {
+        Debug.Log("You Win!");
+        // You can load a new scene or show a UI here
+        // For example: 
+        // SceneManager.LoadScene("WinScene");
+        // Or display a UI: 
+        // winUI.SetActive(true);  // If you have a UI to show
+    }
 }
