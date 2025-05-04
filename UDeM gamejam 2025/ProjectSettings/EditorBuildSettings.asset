@@ -11,6 +11,27 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PrototypeSwitchScene1.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 3990aae86a444234fa0240fdbd07412b
+  - enabled: 1
+    path: Assets/Scenes/IntroScene.unity
+    guid: 0aa0cd794a462d44c959f29611c7d125
+  - enabled: 1
+    path: Assets/Scenes/DetectiveCustomiaztion.unity
+    guid: 0eea69ab11211a84b89f15d265efbfd6
+  - enabled: 1
+    path: Assets/Scenes/BarScene.unity
+    guid: 2d350774d04355343a7bcf3211e12c61
+  - enabled: 1
+    path: Assets/Scenes/VillageScene.unity
+    guid: 450a117395de74a4e827cb406f74586b
+  - enabled: 1
+    path: Assets/Scenes/CatMiniGame.unity
+    guid: 0b299b7557b10f94ab36af78a1fbda89
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 6468ca3a8fcbae74c986cbae3dd9f4db
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
