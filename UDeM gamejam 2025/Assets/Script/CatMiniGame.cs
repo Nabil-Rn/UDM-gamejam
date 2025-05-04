@@ -42,7 +42,7 @@ public class CatMiniGame : MonoBehaviour
     {
         if (selectedFood == "Fish")
         {
-            SceneManager.LoadScene("VillageScene");
+            SceneManager.LoadScene("maze");
         }
         else if (selectedFood == "Cheese")
         {
