@@ -1213,15 +1213,36 @@ MonoBehaviour:
   dialogueText: {fileID: 1460421255}
   charName: {fileID: 745155691}
   lines:
-  - Seems that they called me today. Since  there was a murder today
-  - And uh oh yeah bonjour ron ronron.
-  - Yeah i don't know why there is french there, i'm sorry
-  - Well there are people i have to talk to
-  - There is this guy(description1)
-  - This guy (description2)
-  - and uh luptin
-  - So Yeah Wonder who i should go to first
+  - "Il y a eu un meurtre. Quand ? Eh bien, certains disent que \xE7a s'est pass\xE9
+    hier, d'autres avant-hier. "
+  - "Certaines personnes affirment m\xEAme qu'une personne nomm\xE9e Philip (avec
+    un seul P, \xE0 ce qu'il para\xEEt...) \xE9tait tr\xE8s proche du meurtre, mais
+    lui, il dit qu'il s'\xE9tait endormi... "
+  - "Bon, c'est vrai que c'est un individu connu pour se saouler. En outre, on dit
+    qu'il n'est pas m\xE9chant....."
+  - "S'\xEAtre endormi pendant le meurtre, c'est suspect, mais plausible. "
+  - "Bon, c'est vrai que c'est un individu connu pour se saouler. En outre, on dit
+    qu'il n'est pas m\xE9chant."
+  - " S'\xEAtre endormi pendant le meurtre, c'est suspect, mais plausible."
+  - "Bien s\xFBr, avec toute cette confusion, il n'y avait qu'une seule personne
+    \xE0 qui on pouvait faire appel."
+  - "C'est moi, bien s\xFBr, le fameux d\xE9tective Charles ! (Que je suis content
+    qu'on ait fait appel \xE0 moi, le modeste d\xE9tective Charles !) "
+  - "Vu le cadavre sur lequel j'ai enqu\xEAt\xE9, il semble \xEAtre mort d'une forte
+    perte de sang. "
+  - "(Que je suis content que l\u2019on  m\u2019a m\xEAme appel\xE9, en r\xE9alit\xE9,
+    moi, le humble D\xE9tective Charles) "
+  - "Vu le cadavre que j'ai enqu\xEAt\xE9, on dirait qu\u2019il est mort d\xFB \xE0
+    une forte perte de sang, le trou dans son corps rend cela \xE9vident, en r\xE9alit\xE9.  "
+  - "Ainsi, en premier lieu, il faudrait peut-\xEAtre que j'aille voir Philip et
+    lui poser des questions, ce qui serait le plus \xE9vident. Mais peut-\xEAtre
+    que les personnes qui connaissent bien les gens d'ici et les rumeurs, comme le
+    barman ou le marin, pourront s\xFBrement m'aider \xE0 trouver plus d'indices... "
   names:
+  - "D\xE9tective"
+  - "D\xE9tective"
+  - "D\xE9tective"
+  - "D\xE9tective"
   - "D\xE9tective"
   - "D\xE9tective"
   - "D\xE9tective"

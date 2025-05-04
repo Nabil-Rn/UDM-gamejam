@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: da6da804a2468224687097aaee29f9c7
+guid: 8a0c012271c4e654e973a2bdb757ff31
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5141556794662744973
-    second: FishingBoatDock_0
+      213: 7102689100218679052
+    second: Jeanne_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FishingBoatDock_0
+      name: Jeanne_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 70
         y: 0
-        width: 970
-        height: 646
+        width: 534
+        height: 1220
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 37c81ad165585a8b0800000000000000
-      internalID: -5141556794662744973
+      spriteID: c0fb290ea12d19260800000000000000
+      internalID: 7102689100218679052
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      FishingBoatDock_0: -5141556794662744973
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
